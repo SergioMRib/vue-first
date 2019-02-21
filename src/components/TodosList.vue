@@ -1,9 +1,8 @@
 <template>
     <div >
-        <h1>Tarefas aqui vindas do componente</h1>
         <div v-bind:key="tarefaEspecífica.id"  v-for="tarefaEspecífica in TarefaLista">
             <!-- <h3>{{tarefaEspecífica.title}}</h3> -->
-            <todoItem v-bind:item="tarefaEspecífica"/>
+            <todoItem v-bind:item="tarefaEspecífica" v-on:del-item="$emit('del-item', tarefaEspecífica.id)"/>
         </div>
     </div>
 </template>
@@ -17,6 +16,7 @@ export default {
         todoItem
     },
     props: ["TarefaLista"]
+
 }
 </script>
 

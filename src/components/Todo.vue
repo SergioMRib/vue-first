@@ -3,6 +3,7 @@
         <p>
             <input type="checkbox" v-on:change="toggleCompleted" v-bind:checked="item.completed">
             {{item.title}}
+            <button v-on:click="$emit('del-item', item.id)" class="del">x</button>
         </p>
     </div>
 </template>
@@ -26,5 +27,8 @@ export default {
     }
     .is-completed {
         text-decoration: line-through;
+    }
+    .del {
+        color:red;
     }
 </style>
