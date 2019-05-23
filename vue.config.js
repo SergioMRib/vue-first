@@ -1,4 +1,4 @@
 module.exports = {
-    publicPath: "/vue-first/docs/",
+    publicPath: "/vue-first/",
     outputDir: "docs"
   };
