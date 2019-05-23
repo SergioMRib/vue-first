@@ -21,4 +21,5 @@ yarn-error.log*
 *.sw*
 
 # the notes
-.~lock.Notas.odt#
+*.odt
+Notas.odt

@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     deleteTodo(id) {
-      console.log('You clicked the X and deleted: '+ id);
+
       this.tarefas = this.tarefas.filter(tarefa => tarefa.id !== id);
     },
     addTodo(newTodo) {
